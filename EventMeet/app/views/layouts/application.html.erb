@@ -6,9 +6,8 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body ng-app="EventMeet" ng-controller="MainCtrl">
-  <div ng-repeat="participant in participants">
-  {{participant}}
+<body ng-app="EventMeet" >
+  <ui-view></ui-view>
 </div>
 </body>
 </html>

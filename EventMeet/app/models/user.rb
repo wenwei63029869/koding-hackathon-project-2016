@@ -4,4 +4,3 @@ class User < ActiveRecord::Base
     # this is for which lists are the users become targets on
     has_many :targeted_lists, through: :list_targets, source: :list
 end
-g
